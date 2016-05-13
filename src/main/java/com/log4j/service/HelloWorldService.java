@@ -20,14 +20,6 @@ public class HelloWorldService {
     public void setHelloWorldDAO(HelloWorldDAO helloWorldDAO){
         this.helloWorldDAO = helloWorldDAO;
     }
-    public void deleteTheWorld(Integer id){
-        logger.log(Level.WARN, "Metod deleteTheWorld dijalankan");
-        try {
-            helloWorldDAO.delete(id);
-        } catch (IllegalArgumentException e) {
-            logger.error(e.getMessage(), e);
-        }
-    }
     public void debug(){
         logger.log(Level.DEBUG, "ini adalah debug Message");
     }

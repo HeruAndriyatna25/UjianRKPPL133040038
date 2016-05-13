@@ -23,13 +23,15 @@ public class Main {
         log.info("Menginstankan Service");
         HelloWorldService service = new HelloWorldService();
         
-        log.debug("ini adalah debug message : ");
-        service.debug();
-        //service.setHelloWorldDAO(dao);
-        
         log.info("ini adalah info message");
         dao.save();
+        
+        log.info("setHelloworldDao");
         service.setHelloWorldDAO(dao);
+        
+        log.debug("ini adalah debug message : ");
+        service.debug();
+        
         
         
         
