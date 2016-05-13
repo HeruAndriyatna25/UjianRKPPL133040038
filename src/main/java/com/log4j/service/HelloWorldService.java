@@ -28,4 +28,7 @@ public class HelloWorldService {
             logger.error(e.getMessage(), e);
         }
     }
+    public void debug(){
+        logger.log(Level.DEBUG, "ini adalah debug Message");
+    }
 }

@@ -24,10 +24,13 @@ public class Main {
         HelloWorldService service = new HelloWorldService();
         
         log.debug("ini adalah debug message : ");
-        dao.save();
+        service.debug();
+        //service.setHelloWorldDAO(dao);
         
         log.info("ini adalah info message");
         dao.save();
+        service.setHelloWorldDAO(dao);
+        
         
         
         
